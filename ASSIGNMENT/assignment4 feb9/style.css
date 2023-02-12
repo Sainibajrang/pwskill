@@ -1,1 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.container
+{
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+background-color:aqua;
+height:100vh;
+border-radius: 70px;
+
+}
+.container h1 
+{
+    margin-top: 5px;
+    text-align: center;
+}
+p
+{
+    display: none;
+}
+
+
+
+/* screen 1440pixel */
+@media screen  And (max-width:1440px)
+{
+    .container
+    {
+    background-color: green;
+    }
+   .box1
+   {
+    display: block;
+    font-size: 30px;
+   }
+   h1
+   {font-size: 50px;
+    padding: 10px;
+   }
+}
+/* screen size 1024 */
+@media screen  And (max-width:1024px)
+{
+    .container
+    {
+    background-color: rgb(104, 110, 51);
+    }
+   .box2
+   {
+    display: block;
+    font-size: 40px;
+   }
+   .box1
+   {display: none;}
+
+   h1
+   {font-size: 60px;
+    padding: 10px;
+   }
+}
+
+/* screen 768pixel */
+@media screen  And (max-width:768px)
+{
+    .container
+    {
+    background-color: rgb(233, 65, 208);
+    }
+   .box3
+   {
+    display: block;
+    font-size: 40px;
+   }
+   .box2
+   {
+    display: none;
+   }
+   h1
+   {font-size: 50px;
+    padding: 20px;
+   }
+
+}
+
+/* screen 425pixel */
+@media screen  And (max-width:600px)
+{
+    .container
+    {
+    background-color: rgb(254, 98, 0);
+    }
+    
+   .box4
+   {
+    display: block;
+    font-size: 40px;
+   }
+   .box3
+   {
+    display: none;
+   
+   }
+   h1{font-size: 80px;
+        padding: 25px;
+    }
+}
